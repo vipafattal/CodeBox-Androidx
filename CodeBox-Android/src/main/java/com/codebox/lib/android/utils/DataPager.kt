@@ -1,6 +1,6 @@
 package com.codebox.lib.android.utils
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.codebox.lib.standard.lambda.unitFun
 
 class DataPager<T : Any>(
