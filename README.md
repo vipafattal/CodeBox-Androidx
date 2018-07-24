@@ -1,2 +1,1 @@
-# CodeBoxLibExample
-[![](https://jitpack.io/v/vipafattal/CodeBoxLibExample.svg)](https://jitpack.io/#vipafattal/CodeBoxLibExample)
+[![](https://jitpack.io/v/vipafattal/CodeBox-Androidx.svg)](https://jitpack.io/#vipafattal/CodeBox-Androidx)
