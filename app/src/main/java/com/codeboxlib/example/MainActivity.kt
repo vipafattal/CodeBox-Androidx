@@ -3,6 +3,7 @@ package com.codeboxlib.example
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.codebox.lib.android.widgets.snackbar.snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,5 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         snackbar("Hi")
 
+        button.setOnClickListener {
+        }
     }
 }
