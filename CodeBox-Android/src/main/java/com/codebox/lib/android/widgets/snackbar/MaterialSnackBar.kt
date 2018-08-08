@@ -7,17 +7,23 @@ import com.codebox.lib.android.utils.screenHelpers.dp
 import com.google.android.material.snackbar.Snackbar
 
 
-fun Snackbar.snackBarBottomBar() {
+fun Snackbar.material(isWithBottom: Boolean = false): Snackbar {
     view.background = Image(R.drawable.bg_snackbar)
-    setSnackbarTextColor(R.color.white)
-    showAction { }
     val params = view.layoutParams as ViewGroup.MarginLayoutParams
 
     params.setMargins(
             params.leftMargin + dp(12),
             params.topMargin,
-            params.rightMargin + dp(12), params.bottomMargin + dp(105))
+            params.rightMargin + dp(12),
+            if (isWithBottom)
+                params.bottomMargin + dp(105)
+            else
+                params.bottomMargin + dp(12))
     view.layoutParams = params
 
-
+    return this
 }
+
+
+
+

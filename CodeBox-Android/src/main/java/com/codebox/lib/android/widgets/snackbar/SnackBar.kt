@@ -2,6 +2,7 @@ package com.codebox.lib.android.widgets.snackbar
 
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.codebox.lib.R
 import com.codebox.lib.standard.lambda.unitFun
 import com.google.android.material.snackbar.Snackbar
 
@@ -12,9 +13,9 @@ import com.google.android.material.snackbar.Snackbar
 
 fun AppCompatActivity.snackbar(
         msg: String,
-        v: View = findViewById(android.R.id.content),
-        duration: Int = com.google.android.material.snackbar.Snackbar.LENGTH_INDEFINITE,
-        textColor: Int? = null
+        duration: Int = com.google.android.material.snackbar.Snackbar.LENGTH_LONG,
+        textColor: Int? = R.color.white,
+        v: View = findViewById(android.R.id.content)
 ): Snackbar {
 
     val sn = com.google.android.material.snackbar.Snackbar.make(v, msg, duration)
