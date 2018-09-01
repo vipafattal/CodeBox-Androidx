@@ -7,7 +7,3 @@ import com.codebox.lib.android.utils.screenHelpers.pixelsToSp
 var TextView.sizeInSp: Float
     get() = pixelsToSp(textSize)
     set(value) = setTextSize(TypedValue.COMPLEX_UNIT_SP, value)
-
-var TextView.inc_dec_size: Float
-    get() = pixelsToSp(textSize)
-    set(value) = setTextSize(TypedValue.COMPLEX_UNIT_SP, sizeInSp + value)
